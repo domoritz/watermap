@@ -1,0 +1,24 @@
+body {
+	overflow: hidden;
+}
+
+header {
+	position: fixed;
+	background-color: rgba(255 ,255 ,255 ,0.7);
+	padding: 0px 30px;
+	top: 10px;
+	left: 200px;
+	z-index: 10;
+}
+
+header h1 {
+	margin: 0;
+}
+
+#map {
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%; 
+}

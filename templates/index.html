@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block header %}
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.css" />
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.ie.css" />
+<![endif]-->
+<script src="http://cdn.leafletjs.com/leaflet-0.4.4/leaflet.js"></script>
+<script src="/js/leaflet.markercluster.js"></script>
+
+<script src="/js/main.js" async defer></script>
+
+<link rel="stylesheet" href="/css/MarkerCluster.css" />
+<link rel="stylesheet" href="/css/MarkerCluster.Default.css" />
+{% endblock %}
+
+{% block content %}
+<div id="map"></div>
+{% endblock %}
