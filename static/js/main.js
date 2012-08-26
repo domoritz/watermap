@@ -206,7 +206,7 @@ $(function() {
 	var map = new L.Map('map', {
 		center: new L.LatLng(51.505, -0.09),
 		zoom: 13,
-		layers: [layer_OSM, settlement2000Layer, settlement5000Layer, settlement10000Layer]
+		layers: [layer_OSM, settlement10000Layer, settlement5000Layer, settlement2000Layer]
 	})
 
 	var bounding = L.polygon([[6.29, 30.11],[3.47, 32.31]]);
