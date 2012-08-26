@@ -68,6 +68,32 @@ $(function() {
 	    settlementLayer.addLayer(markers);
 	});
 
+
+	var waterLayer = L.geoJson();
+	var markers2 = new L.MarkerClusterGroup();
+
+	$.getJSON('data/CES_waterpoints.geojson', function(geojsonFeature) {
+		for (var i in geojsonFeature.features) {
+			var feature = geojsonFeature.features[i];
+	        var marker = new L.Marker(
+	        	new L.LatLng(
+	        		feature.geometry.coordinates[1], 
+	        		feature.geometry.coordinates[0]
+	        	)
+	        );
+	        var popupContent = '<dl>';
+	        for (var key in feature.properties) {
+	        	value = feature.properties[key];
+	        	popupContent += "<dt><strong>"+key+"</strong></dt><dd>" + value + "</dd>"
+	        };
+	        popupContent +='</dl>';
+	        marker.bindPopup(popupContent);
+	        markers2.addLayer(marker);
+	    }
+	    waterLayer.addLayer(markers2);
+	});
+
+
 	var settlement2000Layer = L.geoJson();
 	$.getJSON('data/Settlements_2000.geojson', function(geojsonFeature) {
 		settlement2000Layer.addData(geojsonFeature);
@@ -83,14 +109,21 @@ $(function() {
 		settlement10000Layer.addData(geojsonFeature);
 	});
 
+	var imageUrl = 'data/sudan-hydrogeology.png',
+    imageBounds = [[2.08, 21.36], [23.7, 38.4]];
+
+	imageLayer = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.4});
+
 	//=============
 	// Data Layers
 
 	var overlayMaps = {
+		'Water': waterLayer,
 		'Settlement layer': settlementLayer,
 		'Settlement layer > 2000': settlement2000Layer,
 		'Settlement layer > 5000': settlement5000Layer,
-		'Settlement layer > 10000': settlement10000Layer
+		'Settlement layer > 10000': settlement10000Layer,
+		'Image Layer': imageLayer
 	};
 
 	var controls = L.control.layers(baseMaps, overlayMaps);
