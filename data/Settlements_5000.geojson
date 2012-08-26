@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "OBJECTID_1": 1, "OBJECTID": 1786.0, "FID_1": 14268.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Gali", "LAT": 5.5411111, "LON": 31.8630556, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.863055600000109, 5.541111100000023 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "OBJECTID_1": 2, "OBJECTID": 1803.0, "FID_1": 14244.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Mandari", "LAT": 5.58, "LON": 31.57, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.57, 5.58 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "OBJECTID_1": 3, "OBJECTID": 1816.0, "FID_1": 14262.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Pagar", "LAT": 5.60556, "LON": 32.09722, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 32.09722, 5.605560000000139 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "OBJECTID_1": 4, "OBJECTID": 1877.0, "FID_1": 14205.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Badai", "LAT": 5.72, "LON": 31.43, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.430000000000177, 5.72 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "OBJECTID_1": 5, "OBJECTID": 1894.0, "FID_1": 14208.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Maralinn", "LAT": 5.74, "LON": 31.39, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.3900000000001, 5.74000000000018 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "OBJECTID_1": 6, "OBJECTID": 1896.0, "FID_1": 14224.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Gaya", "LAT": 5.7405556, "LON": 31.3541667, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.354166700000178, 5.740555600000164 ] } }
+
+]
+}

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "OBJECTID_1": 1, "OBJECTID": 1816.0, "FID_1": 14262.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Pagar", "LAT": 5.60556, "LON": 32.09722, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 32.09722, 5.605560000000139 ] } }
+
+]
+}

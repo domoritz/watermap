@@ -1,0 +1,104 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "OBJECTID_1": 1, "OBJECTID": 983.0, "FID_1": 14331.0, "STATE": "Central Equatoria", "Fmr_County": "Yei", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Makaia", "LAT": 4.3516667, "LON": 30.6172222, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 30.617222200000128, 4.351666700000124 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "OBJECTID_1": 2, "OBJECTID": 991.0, "FID_1": 1411.0, "STATE": "Central Equatoria", "Fmr_County": "Juba", "New_COUNTY": "Juba", "New_PAYAM": "Lokiliri", "New_BOMA": "Aru", "VILLAGE": "Aru centre", "LAT": 4.3638149, "LON": 31.9845108, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.98451080000018, 4.363814900000023 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "OBJECTID_1": 3, "OBJECTID": 1290.0, "FID_1": 1158.0, "STATE": "Central Equatoria", "Fmr_County": "Juba", "New_COUNTY": "Juba", "New_PAYAM": "Munuki", "New_BOMA": "Nyokuron West", "VILLAGE": "Nyokuron West D", "LAT": 4.8097938, "LON": 31.5588155, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.558815500000094, 4.809793800000023 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "OBJECTID_1": 4, "OBJECTID": 1573.0, "FID_1": 1480.0, "STATE": "Central Equatoria", "Fmr_County": "Juba", "New_COUNTY": "Juba", "New_PAYAM": "Northern Bari", "New_BOMA": "Tendere", "VILLAGE": "Kitmkitim", "LAT": 5.0327827, "LON": 31.5520814, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.552081400000191, 5.032782700000098 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "OBJECTID_1": 5, "OBJECTID": 1580.0, "FID_1": 1418.0, "STATE": "Central Equatoria", "Fmr_County": "Juba", "New_COUNTY": "Juba", "New_PAYAM": "Northern Bari", "New_BOMA": "Jebel Ladu", "VILLAGE": "Peyeti Centre", "LAT": 5.0597473, "LON": 31.6727054, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.672705399999984, 5.059747300000026 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "OBJECTID_1": 6, "OBJECTID": 1625.0, "FID_1": 1387.0, "STATE": "Central Equatoria", "Fmr_County": "Juba", "New_COUNTY": "Juba", "New_PAYAM": "Tijor", "New_BOMA": "Nyarjwa", "VILLAGE": "Wosukujong", "LAT": 5.1859828, "LON": 31.624661, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.624661000000117, 5.185982800000033 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "OBJECTID_1": 7, "OBJECTID": 1641.0, "FID_1": 12016.0, "STATE": "Central Equatoria", "Fmr_County": "Juba", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Bala Pool", "LAT": 5.2666667, "LON": 31.8333333, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.833333300000049, 5.266666700000087 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "OBJECTID_1": 8, "OBJECTID": 1653.0, "FID_1": 929.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Nyori", "New_BOMA": "Nyori", "VILLAGE": "Wulikare", "LAT": 5.3032742, "LON": 31.7348607, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.734860700000183, 5.303274200000146 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "OBJECTID_1": 9, "OBJECTID": 1659.0, "FID_1": 924.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Nyori", "New_BOMA": "Moridi", "VILLAGE": "Anyiding", "LAT": 5.3201885, "LON": 31.7399062, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.739906200000064, 5.320188500000086 ] } }
+,
+{ "type": "Feature", "id": 9, "properties": { "OBJECTID_1": 10, "OBJECTID": 1684.0, "FID_1": 974.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Lojora", "VILLAGE": "Molujore", "LAT": 5.379111, "LON": 31.67219, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.672190000000171, 5.379111000000137 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "OBJECTID_1": 11, "OBJECTID": 1685.0, "FID_1": 14261.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Juban", "LAT": 5.38, "LON": 31.59944, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.599440000000186, 5.380000000000109 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "OBJECTID_1": 12, "OBJECTID": 1686.0, "FID_1": 976.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Lojora", "VILLAGE": "Jobem South", "LAT": 5.384587, "LON": 31.648989, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.648989, 5.384587 ] } }
+,
+{ "type": "Feature", "id": 12, "properties": { "OBJECTID_1": 13, "OBJECTID": 1687.0, "FID_1": 973.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Lojora", "VILLAGE": "Kuriak", "LAT": 5.38507, "LON": 31.668724, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.668724000000111, 5.38507 ] } }
+,
+{ "type": "Feature", "id": 13, "properties": { "OBJECTID_1": 14, "OBJECTID": 1688.0, "FID_1": 14265.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Dogora", "LAT": 5.3866667, "LON": 31.7191667, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.719166700000187, 5.386666699999978 ] } }
+,
+{ "type": "Feature", "id": 14, "properties": { "OBJECTID_1": 15, "OBJECTID": 1689.0, "FID_1": 972.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Lojora", "VILLAGE": "Umbili", "LAT": 5.388482, "LON": 31.682676, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.682676, 5.388482000000124 ] } }
+,
+{ "type": "Feature", "id": 15, "properties": { "OBJECTID_1": 16, "OBJECTID": 1694.0, "FID_1": 970.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Lojora", "VILLAGE": "Potani", "LAT": 5.397399, "LON": 31.686311, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.686311, 5.397399000000178 ] } }
+,
+{ "type": "Feature", "id": 16, "properties": { "OBJECTID_1": 17, "OBJECTID": 1696.0, "FID_1": 898.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Terekeka", "New_BOMA": "Juba Gondi", "VILLAGE": "Piru", "LAT": 5.3994317, "LON": 31.7382457, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.738245700000164, 5.39943170000015 ] } }
+,
+{ "type": "Feature", "id": 17, "properties": { "OBJECTID_1": 18, "OBJECTID": 1699.0, "FID_1": 971.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Lojora", "VILLAGE": "Pojulu", "LAT": 5.401041, "LON": 31.668954, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.668954, 5.401041 ] } }
+,
+{ "type": "Feature", "id": 18, "properties": { "OBJECTID_1": 19, "OBJECTID": 1700.0, "FID_1": 979.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Lojora", "VILLAGE": "Jobem North", "LAT": 5.4037426, "LON": 31.6444476, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.644447600000149, 5.403742600000157 ] } }
+,
+{ "type": "Feature", "id": 19, "properties": { "OBJECTID_1": 20, "OBJECTID": 1704.0, "FID_1": 14228.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Magara", "LAT": 5.4280556, "LON": 31.6988889, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.698888900000156, 5.42805560000005 ] } }
+,
+{ "type": "Feature", "id": 20, "properties": { "OBJECTID_1": 21, "OBJECTID": 1717.0, "FID_1": 1495.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Juba", "New_PAYAM": "Mangala", "New_BOMA": "Logori", "VILLAGE": "Patayi", "LAT": 5.44621, "LON": 31.8376517, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.837651700000151, 5.44621 ] } }
+,
+{ "type": "Feature", "id": 21, "properties": { "OBJECTID_1": 22, "OBJECTID": 1720.0, "FID_1": 1493.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Juba", "New_PAYAM": "Mangala", "New_BOMA": "Wanyang", "VILLAGE": "Lyeli", "LAT": 5.4484315, "LON": 31.8358334, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.835833400000183, 5.448431500000027 ] } }
+,
+{ "type": "Feature", "id": 22, "properties": { "OBJECTID_1": 23, "OBJECTID": 1746.0, "FID_1": 978.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Buranga", "VILLAGE": "Nyamuding", "LAT": 5.490172, "LON": 31.617681, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.617681, 5.490172 ] } }
+,
+{ "type": "Feature", "id": 23, "properties": { "OBJECTID_1": 24, "OBJECTID": 1747.0, "FID_1": 967.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Buranga", "VILLAGE": "Gwargwo", "LAT": 5.4902272, "LON": 31.6431075, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.643107500000099, 5.490227200000049 ] } }
+,
+{ "type": "Feature", "id": 24, "properties": { "OBJECTID_1": 25, "OBJECTID": 1780.0, "FID_1": 896.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Terekeka", "New_BOMA": "Juba Gondi", "VILLAGE": "Payaya", "LAT": 5.533387, "LON": 31.698402, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.698402, 5.533387 ] } }
+,
+{ "type": "Feature", "id": 25, "properties": { "OBJECTID_1": 26, "OBJECTID": 1783.0, "FID_1": 955.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Longi", "VILLAGE": "Gire", "LAT": 5.539869, "LON": 31.5438898, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.543889800000045, 5.539869000000124 ] } }
+,
+{ "type": "Feature", "id": 26, "properties": { "OBJECTID_1": 27, "OBJECTID": 1786.0, "FID_1": 14268.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Gali", "LAT": 5.5411111, "LON": 31.8630556, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.863055600000109, 5.541111100000023 ] } }
+,
+{ "type": "Feature", "id": 27, "properties": { "OBJECTID_1": 28, "OBJECTID": 1788.0, "FID_1": 949.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Longi", "VILLAGE": "Kurunyang", "LAT": 5.547605, "LON": 31.540521, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.540521, 5.5476 ] } }
+,
+{ "type": "Feature", "id": 28, "properties": { "OBJECTID_1": 29, "OBJECTID": 1794.0, "FID_1": 954.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Rego", "New_BOMA": "Longi", "VILLAGE": "Lowirja", "LAT": 5.5586935, "LON": 31.5275878, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.527587800000049, 5.558693500000175 ] } }
+,
+{ "type": "Feature", "id": 29, "properties": { "OBJECTID_1": 30, "OBJECTID": 1795.0, "FID_1": 14934.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Toe", "LAT": 5.56, "LON": 31.5, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.5, 5.56 ] } }
+,
+{ "type": "Feature", "id": 30, "properties": { "OBJECTID_1": 31, "OBJECTID": 1803.0, "FID_1": 14244.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Mandari", "LAT": 5.58, "LON": 31.57, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.57, 5.58 ] } }
+,
+{ "type": "Feature", "id": 31, "properties": { "OBJECTID_1": 32, "OBJECTID": 1811.0, "FID_1": 14231.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Tukara", "LAT": 5.5955556, "LON": 31.7333333, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.73333330000014, 5.595555600000125 ] } }
+,
+{ "type": "Feature", "id": 32, "properties": { "OBJECTID_1": 33, "OBJECTID": 1815.0, "FID_1": 1086.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Muni", "New_BOMA": "Gabuta", "VILLAGE": "Banyasek", "LAT": 5.604692, "LON": 31.723383, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.723383000000183, 5.604692 ] } }
+,
+{ "type": "Feature", "id": 33, "properties": { "OBJECTID_1": 34, "OBJECTID": 1816.0, "FID_1": 14262.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Pagar", "LAT": 5.60556, "LON": 32.09722, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 32.09722, 5.605560000000139 ] } }
+,
+{ "type": "Feature", "id": 34, "properties": { "OBJECTID_1": 35, "OBJECTID": 1838.0, "FID_1": 14195.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Mori Jua", "LAT": 5.65, "LON": 31.38, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.380000000000109, 5.65 ] } }
+,
+{ "type": "Feature", "id": 35, "properties": { "OBJECTID_1": 36, "OBJECTID": 1839.0, "FID_1": 14196.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Baringa", "LAT": 5.65, "LON": 31.48, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.48, 5.65 ] } }
+,
+{ "type": "Feature", "id": 36, "properties": { "OBJECTID_1": 37, "OBJECTID": 1876.0, "FID_1": 14201.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Nyale", "LAT": 5.72, "LON": 31.2, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.2, 5.72 ] } }
+,
+{ "type": "Feature", "id": 37, "properties": { "OBJECTID_1": 38, "OBJECTID": 1877.0, "FID_1": 14205.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Badai", "LAT": 5.72, "LON": 31.43, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.430000000000177, 5.72 ] } }
+,
+{ "type": "Feature", "id": 38, "properties": { "OBJECTID_1": 39, "OBJECTID": 1879.0, "FID_1": 9767.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Gutetian", "LAT": 5.720945515, "LON": 31.45958048, "Classifica": "Administrative Centres" }, "geometry": { "type": "Point", "coordinates": [ 31.459580480000056, 5.720945515000039 ] } }
+,
+{ "type": "Feature", "id": 39, "properties": { "OBJECTID_1": 40, "OBJECTID": 1894.0, "FID_1": 14208.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Maralinn", "LAT": 5.74, "LON": 31.39, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.3900000000001, 5.74000000000018 ] } }
+,
+{ "type": "Feature", "id": 40, "properties": { "OBJECTID_1": 41, "OBJECTID": 1895.0, "FID_1": 14251.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Mogutt", "LAT": 5.74, "LON": 31.59, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.590000000000146, 5.74000000000018 ] } }
+,
+{ "type": "Feature", "id": 41, "properties": { "OBJECTID_1": 42, "OBJECTID": 1896.0, "FID_1": 14224.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Gaya", "LAT": 5.7405556, "LON": 31.3541667, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.354166700000178, 5.740555600000164 ] } }
+,
+{ "type": "Feature", "id": 42, "properties": { "OBJECTID_1": 43, "OBJECTID": 1899.0, "FID_1": 9771.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Tur", "LAT": 5.74747286, "LON": 31.27750065, "Classifica": "Administrative Centres" }, "geometry": { "type": "Point", "coordinates": [ 31.27750065000015, 5.74747286000013 ] } }
+,
+{ "type": "Feature", "id": 43, "properties": { "OBJECTID_1": 44, "OBJECTID": 1932.0, "FID_1": 14211.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Buring", "LAT": 5.81, "LON": 31.07, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 31.070000000000107, 5.81 ] } }
+,
+{ "type": "Feature", "id": 44, "properties": { "OBJECTID_1": 45, "OBJECTID": 1993.0, "FID_1": 1039.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Tali", "New_BOMA": "Pagara", "VILLAGE": "Maburukoto", "LAT": 5.997183, "LON": 30.71036, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 30.71036, 5.997183 ] } }
+,
+{ "type": "Feature", "id": 45, "properties": { "OBJECTID_1": 46, "OBJECTID": 1995.0, "FID_1": 1038.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": "Terekeka", "New_PAYAM": "Tali", "New_BOMA": "Pagara", "VILLAGE": "Loyukwe", "LAT": 6.000623, "LON": 30.71373, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 30.713730000000169, 6.000623000000132 ] } }
+,
+{ "type": "Feature", "id": 46, "properties": { "OBJECTID_1": 47, "OBJECTID": 2000.0, "FID_1": 13938.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Attir", "LAT": 6.06, "LON": 30.83, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 30.830000000000155, 6.060000000000173 ] } }
+,
+{ "type": "Feature", "id": 47, "properties": { "OBJECTID_1": 48, "OBJECTID": 2004.0, "FID_1": 13940.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Akojan", "LAT": 6.11, "LON": 30.72, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 30.72, 6.11 ] } }
+,
+{ "type": "Feature", "id": 48, "properties": { "OBJECTID_1": 49, "OBJECTID": 2007.0, "FID_1": 13942.0, "STATE": "Central Equatoria", "Fmr_County": "Terekeka", "New_COUNTY": null, "New_PAYAM": null, "New_BOMA": null, "VILLAGE": "Attit", "LAT": 6.15545, "LON": 30.59545, "Classifica": "Village" }, "geometry": { "type": "Point", "coordinates": [ 30.59545, 6.15545 ] } }
+
+]
+}
