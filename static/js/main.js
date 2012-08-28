@@ -1,4 +1,7 @@
 $(function() {
+	//============
+	// Background Layers
+
 	var layer_MQ = new L.tileLayer(
 		'http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png',{
 			attribution: 'Data, imagery and map information provided by MapQuest, <a href=" http://www.openstreetmap.org/" title="OpenStreetMap">OpenStreetMap</a>  and contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/" title="CC-BY-SA">CC-BY-SA</a>',
@@ -20,8 +23,7 @@ $(function() {
 	layer_CloudMate = new L.tileLayer(
 		'http://{s}.tile.cloudmade.com/ad132e106cd246ec961bbdfbe0228fe8/997/256/{z}/{x}/{y}.png',{
 			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-			maxZoom: 18,
-			subdomains:'abc'   
+			maxZoom: 18
 		}
 	)
 
@@ -34,6 +36,8 @@ $(function() {
 
 	//============
 	// Settlements
+
+	// with clustering
 
 	var geojsonMarkerOptions = {
 	    radius: 8,
@@ -70,13 +74,14 @@ $(function() {
 
 	//============
 	// Settlements heat map
+
 	var settlementHeatLayer = new L.TileLayer.HeatCanvas("Heat Canvas", map, {},
                         {'step':0.3, 'degree':HeatCanvas.QUAD, 'opacity':0.5});
 
 	$.getJSON('data/CES_Settlements.geojson', function(geojsonFeature) {
 		for (var i in geojsonFeature.features) {
 			var feature = geojsonFeature.features[i];
-	        settlementHeatLayer.pushData(feature.geometry.coordinates[1], feature.geometry.coordinates[0], 20);
+	        settlementHeatLayer.pushData(feature.geometry.coordinates[1], feature.geometry.coordinates[0], 30);
 	    }
 	});
 
@@ -125,23 +130,12 @@ $(function() {
 	    fillOpacity: 0.8
 	};
 
-	var orangeDotOption = {
-	    radius: 8,
-	    fillColor: "orange",
-	    color: "#000",
-	    weight: 1,
-	    opacity: 1,
-	    fillOpacity: 0.8
-	};
+	// copy dot options and replace color
+	var orangeDotOption = $.extend({}, yellowDotOption);
+	orangeDotOption.fillColor = 'orange';
 
-	var redDotOption = {
-	    radius: 8,
-	    fillColor: "red",
-	    color: "#000",
-	    weight: 1,
-	    opacity: 1,
-	    fillOpacity: 0.8
-	};
+	var redDotOption = $.extend({}, yellowDotOption);
+	redDotOption.fillColor = 'red';
 
 	var settlement2000Layer = L.geoJson(null, {
 		    pointToLayer: function (feature, latlng) {
@@ -170,16 +164,22 @@ $(function() {
 		settlement10000Layer.addData(geojsonFeature);
 	});
 
+	//===========
+	// Waterways
 
 	var myStyle = {
 	    "color": "lightblue",
-	    "weight": 1,
-	    "opacity": 0.65
+	    "weight": 2,
+	    "opacity": 0.7
 	};
+
 	var waterwaysLayer = L.geoJson(null, {style: myStyle});
 	$.getJSON('data/CES_waterways_CDE_2008.geojson', function(geojsonFeature) {
 		waterwaysLayer.addData(geojsonFeature);
 	});
+
+	//===========
+	// Image layer
 
 	var imageUrl = 'data/sudan-hydrogeology.png',
     imageBounds = [[2.08, 21.36], [23.7, 38.4]];
@@ -201,7 +201,7 @@ $(function() {
 		'Image Layer': imageLayer
 	};
 
-	var controls = L.control.layers(baseMaps, overlayMaps);
+	var controls = L.control.layers(baseMaps, overlayMaps, {collapsed: false});
 
 	var map = new L.Map('map', {
 		center: new L.LatLng(51.505, -0.09),
@@ -213,19 +213,6 @@ $(function() {
 	map.fitBounds(bounding.getBounds());
 
 	controls.addTo(map)
-
-	/*
-		L.tileLayer('http://{s}.tile.cloudmade.com/ad132e106cd246ec961bbdfbe0228fe8/997/256/{z}/{x}/{y}.png', {
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
-		maxZoom: 18
-	}).addTo(map);
-
-	var positions = [[1,2]];
-
-	var polygon = L.polyline(positions, {fill: false}).addTo(map);
-
-	map.fitBounds(polygon.getBounds());
-	*/
 
 	//================
 	// Locate the user
