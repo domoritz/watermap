@@ -191,11 +191,11 @@ $(function() {
 
 	var overlayMaps = {
 		'Water': waterLayer,
-		'Settlement layer': settlementLayer,
-		'Settlement heatmap': settlementHeatLayer,
-		'Settlement layer > 2000': settlement2000Layer,
-		'Settlement layer > 5000': settlement5000Layer,
-		'Settlement layer > 10000': settlement10000Layer,
+		'Settlements (clustered)': settlementLayer,
+		'Settlements (heatmap)': settlementHeatLayer,
+		'Settlement layer > 2000m': settlement2000Layer,
+		'Settlement layer > 5000m': settlement5000Layer,
+		'Settlement layer > 10000m': settlement10000Layer,
 		'Waterways': waterwaysLayer,
 		'Water points': waterLayer,
 		'Image Layer': imageLayer
