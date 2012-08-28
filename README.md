@@ -10,4 +10,4 @@ Mapping wells and towns in Africa. This project was started on the Development D
 * …
 
 # Demo
-A demo can be found on [http://wellmapafrica.appspot.com/](http://wellmapafrica.appspot.com/). 
+A demo can be found on [http://domoritz.github.com/watermap/](http://domoritz.github.com/watermap/).
