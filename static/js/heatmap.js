@@ -468,6 +468,18 @@
                     image, imageData, length, alpha, offset, finalAlpha;
 
                 if(x != null && y != null){
+                    if(x+x2>width){
+                        x=width-x2;
+                    }
+                    if(x<0){
+                        x=0;
+                    }
+                    if(y<0){
+                        y=0;
+                    }
+                    if(y+x2>height){
+                        y=height-x2;
+                    }
                     left = x;
                     top = y;
                     right = x + x2;
