@@ -17,7 +17,7 @@ $(function() {
 	layer_MapBox = new L.tileLayer(
 		'http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-streets/{z}/{x}/{y}.png',{
 			maxZoom: 18, attribution: 'MapBox Streets',
-			subdomains:'abcd'   
+			subdomains:'abcd'
 		}
 	),
 	layer_CloudMate = new L.tileLayer(
@@ -25,7 +25,7 @@ $(function() {
 			attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
 			maxZoom: 18
 		}
-	)
+	);
 
 	var baseMaps = {
 		'OpenStreetMap': layer_OSM,
@@ -40,12 +40,12 @@ $(function() {
 	// with clustering
 
 	var geojsonMarkerOptions = {
-	    radius: 8,
-	    fillColor: "#ff7800",
-	    color: "#000",
-	    weight: 1,
-	    opacity: 1,
-	    fillOpacity: 0.8
+		radius: 8,
+		fillColor: "#ff7800",
+		color: "#000",
+		weight: 1,
+		opacity: 1,
+		fillOpacity: 0.8
 	};
 
 	var settlementLayer = L.geoJson();
@@ -54,80 +54,89 @@ $(function() {
 	$.getJSON('data/CES_Settlements.geojson', function(geojsonFeature) {
 		for (var i in geojsonFeature.features) {
 			var feature = geojsonFeature.features[i];
-	        var marker = new L.Marker(
-	        	new L.LatLng(
-	        		feature.geometry.coordinates[1], 
-	        		feature.geometry.coordinates[0]
-	        	)
-	        );
-	        var popupContent = '<dl>';
-	        for (var key in feature.properties) {
-	        	value = feature.properties[key];
-	        	popupContent += "<dt><strong>"+key+"</strong></dt><dd>" + value + "</dd>"
-	        };
-	        popupContent +='</dl>';
-	        marker.bindPopup(popupContent);
-	        markers.addLayer(marker);
-	    }
-	    settlementLayer.addLayer(markers);
+			var marker = new L.Marker(
+				new L.LatLng(
+					feature.geometry.coordinates[1],
+					feature.geometry.coordinates[0]
+				)
+			);
+			var popupContent = '<dl>';
+			for (var key in feature.properties) {
+				value = feature.properties[key];
+				popupContent += "<dt><strong>"+key+"</strong></dt><dd>" + value + "</dd>";
+			}
+			popupContent +='</dl>';
+			marker.bindPopup(popupContent);
+			markers.addLayer(marker);
+		}
+		settlementLayer.addLayer(markers);
 	});
 
 	//============
 	// Settlements heat map
 
-	var settlementHeatLayer = new L.TileLayer.HeatCanvas("Heat Canvas", map, {},
-                        {'step':0.3, 'degree':HeatCanvas.QUAD, 'opacity':0.5});
+	var settlementHeatLayer = L.TileLayer.heatMap({
+		radius: 3,
+		opacity: 0.7,
+		gradient: {
+			0.45: "rgb(0,0,255)",
+			0.55: "rgb(0,255,255)",
+			0.65: "rgb(0,255,0)",
+			0.85: "yellow",
+			0.95: "rgb(255,0,0)"
+		}
+	});
 
 	$.getJSON('data/CES_Settlements.geojson', function(geojsonFeature) {
 		for (var i in geojsonFeature.features) {
 			var feature = geojsonFeature.features[i];
-	        settlementHeatLayer.pushData(feature.geometry.coordinates[1], feature.geometry.coordinates[0], 30);
-	    }
+			settlementHeatLayer.pushItem(feature.geometry.coordinates[1], feature.geometry.coordinates[0], 1);
+		}
 	});
 
 	//============
 	// Waterpoints
 
 	var waterDotOption = {
-	    radius: 4,
-	    fillColor: "69C5FF",
-	    color: "lightblue",
-	    weight: 1,
-	    opacity: 0.7,
-	    fillOpacity: 0.5
+		radius: 4,
+		fillColor: "69C5FF",
+		color: "lightblue",
+		weight: 1,
+		opacity: 0.7,
+		fillOpacity: 0.5
 	};
 
 	var waterLayer = L.geoJson(null, {
 		pointToLayer: function (feature, latlng) {
-	        return L.circleMarker(latlng, waterDotOption);
-	    }});
+			return L.circleMarker(latlng, waterDotOption);
+		}});
 	var markers2 = new L.MarkerClusterGroup();
 
 	$.getJSON('data/CES_waterpoints.geojson', function(geojsonFeature) {
-	    waterLayer.addData(geojsonFeature);
+		waterLayer.addData(geojsonFeature);
 	});
 
 	//=====================
 	// Other geoJSON layers
 
 	var LeafIcon = L.Icon.extend({
-        options: {
-            shadowUrl: 'lhttp://leaflet.cloudmade.com/dist/images/marker-shadow.png',
-            iconSize:     [38, 95],
-            shadowSize:   [50, 64],
-            iconAnchor:   [22, 94],
-            shadowAnchor: [4, 62],
-            popupAnchor:  [-3, -76]
-        }
-    });
+		options: {
+			shadowUrl: 'lhttp://leaflet.cloudmade.com/dist/images/marker-shadow.png',
+			iconSize:     [38, 95],
+			shadowSize:   [50, 64],
+			iconAnchor:   [22, 94],
+			shadowAnchor: [4, 62],
+			popupAnchor:  [-3, -76]
+		}
+	});
 
-    var yellowDotOption = {
-	    radius: 8,
-	    fillColor: "yellow",
-	    color: "#000",
-	    weight: 1,
-	    opacity: 1,
-	    fillOpacity: 0.8
+	var yellowDotOption = {
+		radius: 8,
+		fillColor: "yellow",
+		color: "#000",
+		weight: 1,
+		opacity: 1,
+		fillOpacity: 0.8
 	};
 
 	// copy dot options and replace color
@@ -138,27 +147,27 @@ $(function() {
 	redDotOption.fillColor = 'red';
 
 	var settlement2000Layer = L.geoJson(null, {
-		    pointToLayer: function (feature, latlng) {
-		        return L.circleMarker(latlng, yellowDotOption);
-		    }
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, yellowDotOption);
+			}
 		});
 	$.getJSON('data/Settlements_2000.geojson', function(geojsonFeature) {
 		settlement2000Layer.addData(geojsonFeature);
 	});
 
 	var settlement5000Layer = L.geoJson(null, {
-		    pointToLayer: function (feature, latlng) {
-		        return L.circleMarker(latlng, orangeDotOption);
-		    }
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, orangeDotOption);
+			}
 		});
 	$.getJSON('data/Settlements_5000.geojson', function(geojsonFeature) {
 		settlement5000Layer.addData(geojsonFeature);
 	});
 
 	var settlement10000Layer = L.geoJson(null, {
-		    pointToLayer: function (feature, latlng) {
-		        return L.circleMarker(latlng, redDotOption);
-		    }
+			pointToLayer: function (feature, latlng) {
+				return L.circleMarker(latlng, redDotOption);
+			}
 		});
 	$.getJSON('data/Settlements_10000.geojson', function(geojsonFeature) {
 		settlement10000Layer.addData(geojsonFeature);
@@ -168,9 +177,9 @@ $(function() {
 	// Waterways
 
 	var myStyle = {
-	    "color": "lightblue",
-	    "weight": 2,
-	    "opacity": 0.7
+		"color": "lightblue",
+		"weight": 2,
+		"opacity": 0.7
 	};
 
 	var waterwaysLayer = L.geoJson(null, {style: myStyle});
@@ -182,7 +191,7 @@ $(function() {
 	// Image layer
 
 	var imageUrl = 'data/sudan-hydrogeology.png',
-    imageBounds = [[2.08, 21.36], [23.7, 38.4]];
+	imageBounds = [[2.08, 21.36], [23.7, 38.4]];
 
 	imageLayer = L.imageOverlay(imageUrl, imageBounds, {opacity: 0.4});
 
@@ -207,12 +216,12 @@ $(function() {
 		center: new L.LatLng(51.505, -0.09),
 		zoom: 13,
 		layers: [layer_OSM, settlement10000Layer, settlement5000Layer, settlement2000Layer]
-	})
+	});
 
 	var bounding = L.polygon([[6.29, 30.11],[3.47, 32.31]]);
 	map.fitBounds(bounding.getBounds());
 
-	controls.addTo(map)
+	controls.addTo(map);
 
 	//================
 	// Locate the user
